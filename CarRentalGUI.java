@@ -182,6 +182,16 @@ public class CarRentalGUI extends JFrame {
                 int rentalDays = Integer.parseInt(rentalDaysTextField.getText());
                 int milesDriven = Integer.parseInt(milesDrivenTextField.getText());
 
+                // check if days and miles are greater than 0
+                if (rentalDays <= 0) {
+                    JOptionPane.showMessageDialog(CarRentalGUI.this, "Rental days must be greater than 0.");
+                    return;
+                }
+                if (milesDriven <= 0) {
+                    JOptionPane.showMessageDialog(CarRentalGUI.this, "Miles driven must be greater than 0.");
+                    return;
+                }
+
                 String customerName = customerNameTextField.getText();
                 String customerLicense = customerLicenseTextField.getText();
 
