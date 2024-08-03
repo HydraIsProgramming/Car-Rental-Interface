@@ -242,6 +242,7 @@ public class CarRentalGUI extends JFrame {
             return new Insets(radius + thickness, radius + thickness, radius + thickness, radius + thickness);
         }
 
+        //get borders
         @Override
         public Insets getBorderInsets(Component c, Insets insets) {
             insets.left = insets.right = radius + thickness;
