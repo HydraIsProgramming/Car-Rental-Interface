@@ -1,4 +1,8 @@
 public class CarRentalService {
+    /* the carRentalService class is responsible for calculating vehicle rental costs. It acheives this by utilizing key 
+    * metrics such as tye of vehicle, rental duration, and miles driven. With these fields it produces a rental cost adjusting 
+    * for each of these factors.
+     */
     private static final double SEDAN_RATE_PER_DAY = 60.0;
     private static final double SUV_RATE_PER_DAY = 100.0;
     private static final double TRUCK_RATE_PER_DAY = 150.0;
@@ -18,6 +22,7 @@ public class CarRentalService {
     private static final double MILEAGE_RATE_PER_MILE = 0.25; // Rate per additional mile
 
     public double calculateRentalCost(VehicleType vehicleType, int rentalDays, int milesDriven) {
+        //C alculates the total rental cost based on the type of vehicle, rental duration, and mileage driven.
         double ratePerDay;
         int baseMileage;
     
